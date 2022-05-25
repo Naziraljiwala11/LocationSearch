@@ -1,0 +1,185 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: auto;
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.first i{
+    font-size: 2rem;
+}
+.first h2{
+    margin-left: 18.5rem;
+}
+.second{
+    padding: 50px 0;
+}
+
+.firstTo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 0 ;
+}
+.firstTo i{
+    font-size: 2rem;
+}
+.firstTo h2{
+    margin-left: 28rem;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.bottom h6{
+    margin-bottom: 12rem;
+}
+.bottom button{
+  width: 100%;
+}
+.showContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+   background: rgba(77, 77, 77, .5);
+   opacity: 0;
+   pointer-events: none;
+}
+.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+.image{
+    width: 100%;
+}
+.mainTwo{
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+
+@media(max-width: 500px){
+    body{
+        background-image: url("./images/map.png");
+    }
+    .main{
+       width: 100%;
+       height: 100%;
+    }
+    .second{
+        margin-bottom: 8rem;
+    }
+    .button{
+        margin-bottom: 10px;
+    }
+    .first h2{
+        margin-left: 4rem;
+    }
+    .showContainer{
+       background-image: url("./images/map.png");
+       background-position: center;
+    }
+    .Two{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 40%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .right{
+        display: none;
+    }
+    .bottom h6{
+        margin-bottom: 5rem;
+    }
+    .firstTo h2{
+        margin-left: 3rem;
+    }
+    .One{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 60%;
+        background-color: white;
+        border-radius: 1rem 1rem 0 0;
+    }
+    .One h6{
+        padding: 10px;
+        text-align: start;
+    }
+    .Three{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        background-color: white;
+    }
+    .Three h6{
+        padding: 10px;
+        text-align: start;
+    }
+    .showTwo{
+        opacity: 1;
+        pointer-events: auto;
+
+    }
+
+}
+@media(max-width: 400px){
+    .first h2{
+        margin-left: 3rem;
+    }
+    .firstTo h2{
+        margin-left: 2.5rem;
+    }
+    .second{
+        margin-bottom: 2rem;
+    }
+    .Three{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        background-color: white;
+    }
+    .showTwo{
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+@media(width:280px){
+    .first h2, .firstTo h2{
+        margin-left: 1rem;
+    }
+    .second{
+        margin-bottom: 1rem;
+    }
+    .Three{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        background-color: white;
+    }
+    .showTwo{
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
