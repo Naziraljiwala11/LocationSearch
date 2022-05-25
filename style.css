@@ -107,7 +107,7 @@
         display: none;
     }
     .bottom h6{
-        margin-bottom: 5rem;
+        display:none;
     }
     .firstTo h2{
         margin-left: 3rem;
